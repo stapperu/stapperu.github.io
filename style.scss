@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   background-color: silver;
+
+}
+.startButton { margin: 20px;
+padding: 10px 20px;}
+
+.squareBox {
+ display: grid;
+ grid-template-columns: 100px 100px;
+ gap: 20px;
+ grid-template-rows: 100px 100px;
+}
+
+.square { 
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+}
+
+.square1 {
+    background-color: green;
+}
+.square2 {
+    background-color: blue;
+}
+.square3 {
+    background-color:red;
+}
+.square4 {
+    background-color: yellow;
+}
+
+
