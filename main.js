@@ -38,6 +38,11 @@ function checkArrays(temporaryArray, memorizedArray) {
 
 squares.forEach((square) =>
   square.addEventListener("click", () => {
+square.classList.add('clickedSquare');
+setTimeout(() => {
+  square.classList.remove('clickedSquare');}, 100);
+
+
     temporaryArray.push(parseInt(square.id));
    
 

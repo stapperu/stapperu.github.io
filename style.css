@@ -17,6 +17,9 @@ body {
   grid-template-rows: 100px 100px;
 }
 
+.clickedSquare { scale:1.1;
+box-shadow: inset 0px 0px 10px white;}
+
 .square {
   height: 100px;
   width: 100px;
