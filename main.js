@@ -47,6 +47,7 @@ function checkArrays(temporaryArray, memorizedArray) {
 squares.forEach((square) =>
 	square.addEventListener("click", () => {
 		square.classList.add("clickedSquare");
+    track1.play();
 		setTimeout(() => {
 			square.classList.remove("clickedSquare");
 		}, 100);
@@ -70,7 +71,8 @@ squares.forEach((square) =>
 			// Check for mismatch only within temporaryArray's length
 			for (let i = 0; i < temporaryArray.length; i++) {
 				if (temporaryArray[i] !== memorizedArray[i]) {
-					statusMsg.style.color = "red";
+         
+          statusMsg.style.color = "red";
 					statusMsg.textContent = "Fail";
 					resetLevelCount();
 					setTimeout(() => {
@@ -125,3 +127,6 @@ function congratz(){
 
 function resetLevelCount(){levelLabel.textContent = "Level 1";
   levelNumber=1;}
+
+
+  const track1= new Audio('trimmedaudio.mp3');
