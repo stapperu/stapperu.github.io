@@ -73,6 +73,7 @@ squares.forEach((square) =>
 					statusMsg.style.color = "red";
 					statusMsg.textContent = "Fail";
 					levelLabel.textContent = "Level 1";
+          levelNumber=1;
 					setTimeout(() => {
 						statusMsg.textContent = "";
 						statusMsg.style.color = "white";
