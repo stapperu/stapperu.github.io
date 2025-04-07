@@ -1,20 +1,51 @@
 body {
+  color:rgb(2, 109, 2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: silver;
+  background-color: rgb(204, 231, 198);
 }
 
+button, .normal,.harder{ 
+border-radius: 16px;
+box-shadow: none;
+background-color: lime;
+font-size: 1.2rem;
+background-color: lime;
+margin: 10px;
+padding: 10px 20px;
+}
 .startButton {
   margin: 20px;
   padding: 10px 20px;
 }
 
 .squareBox {
+  position: relative;
   display: grid;
   grid-template-columns: 100px 100px;
-  gap: 20px;
+  gap: 25px;
   grid-template-rows: 100px 100px;
+}
+
+.difficultySelectorText, .levelLabel { 
+  margin-top:50px;
+  font-weight: bold;
+  font-size: 1.4rem;
+
+}
+
+.statusMsg{ position: absolute;
+top: 50%;
+left: 55%;
+transform: translate(-50%,-50%);
+text-transform: uppercase;
+font-size: 1.8rem;
+font-weight: bold;
+color: white;
+text-shadow: 1px 1px 20px black;
+z-index: 5;
+
 }
 
 .clickedSquare { scale:1.1;
