@@ -72,8 +72,7 @@ squares.forEach((square) =>
 				if (temporaryArray[i] !== memorizedArray[i]) {
 					statusMsg.style.color = "red";
 					statusMsg.textContent = "Fail";
-					levelLabel.textContent = "Level 1";
-          levelNumber=1;
+					resetLevelCount();
 					setTimeout(() => {
 						statusMsg.textContent = "";
 						statusMsg.style.color = "white";
@@ -94,9 +93,11 @@ startButton.addEventListener("click", () => {
 	setTimeout(() => {
 		statusMsg.textContent = "";
 	}, 1000);
+
 	clearTemporary();
 	clearMemorized();
 	addToMemorized();
+  resetLevelCount()
 });
 
 harderDiff.addEventListener("click", () => {
@@ -118,7 +119,9 @@ normalDiff.addEventListener("click", () => {
 function congratz(){
 	if (levelLabel.textContent == "Level 6") {
 		manlyman.style.opacity = "1";
-    setTimeout(()=>{manlyman.style.opacity="0"},500)
+    setTimeout(()=>{manlyman.style.opacity="0"},800)
 	}
 };
 
+function resetLevelCount(){levelLabel.textContent = "Level 1";
+  levelNumber=1;}
