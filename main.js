@@ -47,6 +47,7 @@ function checkArrays(temporaryArray, memorizedArray) {
 squares.forEach((square) =>
 	square.addEventListener("click", () => {
 		square.classList.add("clickedSquare");
+		track1.currentTime=0;
     track1.play();
 		setTimeout(() => {
 			square.classList.remove("clickedSquare");
